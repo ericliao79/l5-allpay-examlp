@@ -11,17 +11,8 @@
 |
 */
 
-
-use ericliao79\l5allpay\allpay;
-
 Route::get('/', function () {
-
-    new allpay(
-        config('ALLPAY_STORE_ID'),
-        config('ALLPAY_HASH_KEY'),
-        config('ALLPAY_HASH_IV')
-    );
-
-
     return view('welcome');
 });
+
+Route::get('createOrder', 'OrderController@createOrder');

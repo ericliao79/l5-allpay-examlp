@@ -6,6 +6,7 @@
     "type": "project",
     "require": {
         "php": ">=7.0.0",
+        "ericliao79/laravel5-allpay": "^0.0.2",
         "fideloper/proxy": "~3.3",
         "laravel/framework": "5.5.*",
         "laravel/tinker": "~1.0"
@@ -19,8 +20,7 @@
     "autoload": {
         "classmap": [
             "database/seeds",
-            "database/factories",
-            "../l5-allpay/src"
+            "database/factories"
         ],
         "psr-4": {
             "App\\": "app/"
